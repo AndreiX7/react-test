@@ -11,7 +11,7 @@ const fields = [
   { id: "dob", name: "Date of Birth", type: "date", validation: '' },
   { id: "email", name: "Email", type: "oneliner", validation: (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)},
   { id: "contact", name: "Contact Number", type: "oneliner", validation: (/^\d{10}$/) },
-  { id: "intro", name: "Tell me about yourself", type: "multiline", validation: '' },
+  { id: "intro", name: "Tell me about yourself", type: "multiline", validation: (/^.{1,255}$/) },
 ];
 
 class Form extends Component {
