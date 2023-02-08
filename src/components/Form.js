@@ -10,7 +10,7 @@ const fields = [
   { id: "name", name: "Name", type: "oneliner", validation: (/^[A-Za-z]+$/)},
   { id: "dob", name: "Date of Birth", type: "date", validation: '' },
   { id: "email", name: "Email", type: "oneliner", validation: (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)},
-  { id: "contact", name: "Contact Number", type: "oneliner", validation: (/\d+/) },
+  { id: "contact", name: "Contact Number", type: "oneliner", validation: (/^\d{10}$/) },
   { id: "intro", name: "Tell me about yourself", type: "multiline", validation: '' },
 ];
 
