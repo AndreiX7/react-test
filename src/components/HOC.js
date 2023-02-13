@@ -5,7 +5,7 @@ const HOC = (Display) => (props) => {
   const randomColor = color[Math.floor(Math.random() * color.length)];
 
   return (
-    <div style={{ color: randomColor }}>
+    <div style={{ backgroundColor: randomColor }}>
       <Display />
     </div>
   );
